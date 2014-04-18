@@ -12,6 +12,8 @@ alias slt='open -a "Sublime Text 3"'
 # also/or do this:
 # ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" ~/bin/subl
 
+# git undo last commit
+alias gitundo="git reset --soft 'HEAD^'"
 
 # Hidden files
 alias showhidden='defaults write com.apple.finder AppleShowAllFiles TRUE && killall Finder'
