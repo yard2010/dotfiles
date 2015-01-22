@@ -19,6 +19,9 @@ alias gitundo="git reset --soft 'HEAD^'"
 alias showhidden='defaults write com.apple.finder AppleShowAllFiles TRUE && killall Finder'
 alias hidehidden='defaults write com.apple.finder AppleShowAllFiles FALSE && killall Finder'
 
+# i <3 u cask
+alias cask='brew cask'
+
 # be nice
 alias please=sudo
 alias hosts='sudo $EDITOR /etc/hosts'   # yes I occasionally 127.0.0.1 twitter.com ;)
