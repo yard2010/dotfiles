@@ -61,3 +61,8 @@ echo $BASH_VERSION # should be 4.x not the old 3.2.X
 # Later, confirm iterm settings aren't conflicting.
 
 
+# Install Base16 colors
+git clone https://github.com/chriskempson/base16-shell.git ~/dotfiles/code/base16-shell
+
+# Install NVM
+wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.26.1/install.sh | bash
