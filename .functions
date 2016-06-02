@@ -26,8 +26,8 @@ function server() {
 
 # Start a dev server with no cache and shit, based on node http-server
 function devserver() {
-	http-server -c-1 -p8000
 	open "http://localhost:8000"
+	http-server -c-1 -p8000
 }
 
 # git log with per-commit cmd-clickable GitHub URLs (iTerm)
