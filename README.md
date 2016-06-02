@@ -49,7 +49,7 @@ I recommend getting a [`.jshintrc`](https://github.com/jshint/node-jshint/blob/m
 ## NPM things
 
 ```bash
-npm install -g jsfmt bower yo
+npm install -g jsfmt bower yo http-server
 ```
 
 

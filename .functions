@@ -24,6 +24,12 @@ function server() {
 	python -c $'import SimpleHTTPServer;\nmap = SimpleHTTPServer.SimpleHTTPRequestHandler.extensions_map;\nmap[""] = "text/plain";\nfor key, value in map.items():\n\tmap[key] = value + ";charset=UTF-8";\nSimpleHTTPServer.test();' "$port"
 }
 
+# Start a dev server with no cache and shit, based on node http-server
+function devserver() {
+	http-server -c-1 -p8000
+	open "http://localhost:8000"
+}
+
 # git log with per-commit cmd-clickable GitHub URLs (iTerm)
 function gf() {
   local remote="$(git remote -v | awk '/^origin.*\(push\)$/ {print $2}')"
