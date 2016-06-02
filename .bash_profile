@@ -36,6 +36,9 @@ shopt -s nocaseglob
 # NVM
 [[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh  # This loads NVM
 
+# RVM
+source ~/.rvm/scripts/rvm
+
 
 ##
 ## Completion…
