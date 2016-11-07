@@ -33,9 +33,14 @@ BASE16_SHELL="~/dotfiles/code/base16-shell/base16-ocean.dark.sh"
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob
 
+# RVM
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
+
 # NVM
 [[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh  # This loads NVM
 
+# Add pyenv to $PATH
+eval "$(pyenv init -)"
 
 ##
 ## Completion…

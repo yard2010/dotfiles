@@ -49,6 +49,7 @@ brew install tree
 #brew install zopfli
 brew install ffmpeg --with-libvpx
 #brew install android-platform-tools
+brew install pyenv
 
 # Remove outdated versions from the cellar
 brew cleanup
