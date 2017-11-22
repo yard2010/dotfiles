@@ -3,7 +3,8 @@ cd "$(dirname "$0")"
 git pull
 function doIt() {
 	# Added - exclude code dir. z nave etc. are installed to this dir..
-	rsync --exclude "migration.md" --exclude "brew.sh" --exclude "brew-cask.sh" --exclude "code/" --exclude ".git/" --exclude ".DS_Store" --exclude "sync.sh" --exclude "Brewfile" --exclude "Caskfile" --exclude "install-deps.sh" --exclude "README.md" -av . ~
+    # Also, excluding our specific current .gitignore_dotfiles file
+	rsync --exclude ".gitignore_dotfiles" --exclude "migration.md" --exclude "brew.sh" --exclude "brew-cask.sh" --exclude "code/" --exclude ".git/" --exclude ".DS_Store" --exclude "sync.sh" --exclude "Brewfile" --exclude "Caskfile" --exclude "install-deps.sh" --exclude "README.md" -av . ~
 }
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
 	doIt
