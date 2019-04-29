@@ -25,6 +25,7 @@
 [core]
 	excludesfile = ~/.gitignore
 	attributesfile = ~/.gitattributes
+	sshCommand = ssh
 
 [pager]
 	# insanely beautiful diffs ==> npm install -g diff-so-fancy
@@ -116,3 +117,14 @@
 	showPatch = true
 [log]
 	date = relative
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[url "https://"]
+	insteadOf = git://
+[user]
+	name = Yarden Refaeli
+	email = yarden.refaeli@saga.org

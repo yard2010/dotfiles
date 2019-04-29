@@ -18,6 +18,7 @@ alias hidehidden='defaults write com.apple.finder AppleShowAllFiles FALSE && kil
 alias mv='mv -v'
 alias rm='rm -i -v'
 alias cp='cp -v'
+alias l='ls'
 
 alias chmox='chmod -x'
 
